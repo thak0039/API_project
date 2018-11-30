@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.page{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+    header {
+        padding: 0rem;
+        margin-left:20rem;
+        text-align: center;
+        display: flex;
+        height: 300px;
+        align-items: center;
+    }
+
+    header button {
+        font-size: 2rem;
+        padding:1rem;
+        background-color: skyblue;
+        color: white;
+        flex-basis: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    input:nth-child(1) {
+        background-color: pink;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    a:nth-child(2) {
+        /*align-self: flex-start;
+  order: 2;*/
+    }
+
+    a:nth-child(3) {
+        /*align-self: flex-end; 
+  order: 1;*/
+    }
+
+    .iconic-property-stroke,
+    .iconic-property-fill {
+        fill: #345;
+        stroke: #269
+    }
+
+    #search-button {
+        margin-left: 0rem;
+        height: 2rem;
+        width: 2rem;
+        cursor: pointer;
+    }
+
+    /*Add this class to the recommend and search results content sections in HTML*/
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .movieCard {
+        width: 50rem;
+        height: auto;
+        margin: 1rem auto;
+        background-color:#1D9D48;             
+        cursor: pointer;
+        text-indent: 32px;
+        border: 1px solid #315C31;
+        -webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+        /* Fo Safari 3.1 to 6.0 */
+        transition: width 1.5s;
+    }
+    .movieCard:hover{
+        transform: scale(3s);
+        box-shadow: 10px 10px 30px lightgreen;
+    }
+    
+    .imageSection {
+        float: left;
+        width: 12rem;
+        height: 17rem;
+        margin-right: 1rem;
+        overflow: hidden;
+    }
+
+    /*select only the images that are direct descendants of .imageSection*/
+    .imageSection > img {
+        height: 17rem;
+        margin-right: 1rem;
+    }
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+
+    .modal {
+        position: fixed;
+        width: 500px;
+        height: 280px;
+        z-index: 200;
+        top: calc((100% - 280px)/2);
+        left: calc((100% - 500px)/2);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        color: #555;
+        background-color: #eee;
+    }
+
+    /* use these class names to show or hide the overlay and modal window */
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .off {
+        transform: translateY(-400%);
+    }
+
+    .on {
+        transform: translateY(0);
+    }
+
+    .cancelButton,
+    .saveButton {
+        width: 120px;
+        position: absolute;
+        border: none;
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+        padding: 0.25rem 2rem;
+        font-size: 1rem;
+    }
+
+    .saveButton {
+        bottom: 1rem;
+        right: 4rem;
+    }
+
+    .cancelButton {
+        bottom: 1rem;
+        left: 4rem;
+    }
+
+    .modal-header {
+        padding: 2px 16px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+    }
+
+    .modal-radio {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    #search-input {
+        margin: 1rem;
+        width: 250px;
+        height: 32px;
+        background;
+        font-size: 2rem;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+        text-indent: 32px;
+        -webkit-transition: width 6s;
+        /* Fo Safari 3.1 to 6.0 */
+        transition: width 1.5s;
+    }
+
+    #search-input:focus {
+
+        width: 650px;
+
+    }
+
+    main {
+        background-color:#6B9696;
+    }
+
+    #back-button {}
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 2px 2px black;
+        color:#1D9D48;
+    }
+
+    .btnback {
+        padding:0rem;
+        margin: 0rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: azure;
+    }
+
+    #modalButton {
+        margin: 1rem;
+        padding: 0rem;
+        color: black;
+        height: 2rem;
+        width: 2rem;
+        cursor: pointer;
+
+    }
+
+    .attribution {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2rem;
+        clear: both;
+        transition: transform 1s ease-in-out;
+    }
+
+    .attribution:hover {
+        transform: rotateY(180deg);
+    }
+
